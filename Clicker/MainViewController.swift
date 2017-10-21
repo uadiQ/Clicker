@@ -18,11 +18,6 @@ class MainViewController: UIViewController {
     
     @IBAction func backToFirstScreen(_ sender: UIStoryboardSegue)
     {
-        if let sourceVC = sender.source as? ClickerViewController
-        {
-            lastScoreLabel.text = "Last score: 0"
-        }
-        
         if let sourceVC = sender.source as? ScoreScreenViewController
         {
             if let transferedScore = sourceVC.finalScore{
