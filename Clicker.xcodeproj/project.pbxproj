@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		1C57C2501F9B4B11000F7CAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C57C24F1F9B4B11000F7CAD /* AppDelegate.swift */; };
-		1C57C2521F9B4B11000F7CAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C57C2511F9B4B11000F7CAD /* ViewController.swift */; };
 		1C57C2551F9B4B11000F7CAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C57C2531F9B4B11000F7CAD /* Main.storyboard */; };
 		1C57C2571F9B4B11000F7CAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C57C2561F9B4B11000F7CAD /* Assets.xcassets */; };
 		1C57C25A1F9B4B11000F7CAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C57C2581F9B4B11000F7CAD /* LaunchScreen.storyboard */; };
+		1C57C2621F9B4B4A000F7CAD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C57C2611F9B4B4A000F7CAD /* MainViewController.swift */; };
+		1C57C2641F9B4C7E000F7CAD /* ClickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C57C2631F9B4C7E000F7CAD /* ClickerViewController.swift */; };
+		1C57C2661F9B4E3D000F7CAD /* ScoreScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C57C2651F9B4E3D000F7CAD /* ScoreScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1C57C24C1F9B4B11000F7CAD /* Clicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C57C24F1F9B4B11000F7CAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1C57C2511F9B4B11000F7CAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1C57C2541F9B4B11000F7CAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1C57C2561F9B4B11000F7CAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C57C2591F9B4B11000F7CAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C57C25B1F9B4B11000F7CAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C57C2611F9B4B4A000F7CAD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		1C57C2631F9B4C7E000F7CAD /* ClickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickerViewController.swift; sourceTree = "<group>"; };
+		1C57C2651F9B4E3D000F7CAD /* ScoreScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				1C57C24F1F9B4B11000F7CAD /* AppDelegate.swift */,
-				1C57C2511F9B4B11000F7CAD /* ViewController.swift */,
 				1C57C2531F9B4B11000F7CAD /* Main.storyboard */,
 				1C57C2561F9B4B11000F7CAD /* Assets.xcassets */,
 				1C57C2581F9B4B11000F7CAD /* LaunchScreen.storyboard */,
 				1C57C25B1F9B4B11000F7CAD /* Info.plist */,
+				1C57C2611F9B4B4A000F7CAD /* MainViewController.swift */,
+				1C57C2631F9B4C7E000F7CAD /* ClickerViewController.swift */,
+				1C57C2651F9B4E3D000F7CAD /* ScoreScreenViewController.swift */,
 			);
 			path = Clicker;
 			sourceTree = "<group>";
@@ -136,8 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C57C2521F9B4B11000F7CAD /* ViewController.swift in Sources */,
 				1C57C2501F9B4B11000F7CAD /* AppDelegate.swift in Sources */,
+				1C57C2661F9B4E3D000F7CAD /* ScoreScreenViewController.swift in Sources */,
+				1C57C2641F9B4C7E000F7CAD /* ClickerViewController.swift in Sources */,
+				1C57C2621F9B4B4A000F7CAD /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,7 +219,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -262,7 +270,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
