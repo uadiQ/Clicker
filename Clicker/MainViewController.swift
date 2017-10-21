@@ -12,21 +12,22 @@ class MainViewController: UIViewController {
     @IBOutlet weak var lastScoreLabel: UILabel!
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
     @IBAction func backToFirstScreen(_ sender: UIStoryboardSegue)
     {
         if let sourceVC = sender.source as? ClickerViewController
         {
-            lastScoreLabel.text = "Last score: \(sourceVC.currentScore)"
+            lastScoreLabel.text = "Last score: 0"
         }
         
         if let sourceVC = sender.source as? ScoreScreenViewController
         {
-            lastScoreLabel.text = sourceVC.finalScoreLabelText
+            if let transferedScore = sourceVC.finalScore{
+                lastScoreLabel.text = "Last score: \(transferedScore)"
+            }
         }
     }
 }

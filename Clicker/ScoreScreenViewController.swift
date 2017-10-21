@@ -11,14 +11,17 @@ import UIKit
 class ScoreScreenViewController: UIViewController {
     @IBOutlet weak var finalScoreLabel: UILabel!
     
-    var finalScoreLabelText: String?
+    var finalScore: Int?
     
     //var finalScore: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        finalScoreLabel.text = finalScoreLabelText
+        if let nonOptScore = finalScore
+        {
+            finalScoreLabel.text = "Your score: \(nonOptScore)"
+        }
     }
-
-
+    
+    
 }

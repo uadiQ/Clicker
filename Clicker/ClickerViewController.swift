@@ -15,11 +15,10 @@ class ClickerViewController: UIViewController {
     @IBOutlet weak var secondButton: UIButton!
     @IBOutlet weak var thirdButton: UIButton!
     var currentScore: Int = 0
-
+    
     override func viewDidLoad() {
-        currentScore = 0
         super.viewDidLoad()
-
+        currentScore = 0
     }
     
     func showRandomButton()
@@ -32,10 +31,16 @@ class ClickerViewController: UIViewController {
         }
         clickersArray[randomButtonIndex].isHidden = false
     }
-
-    @IBAction func anyTapButtonClicked(_ sender: UIButton) {
+    
+    func updateScoreAndScoreLabel()
+    {
         currentScore += 1
         currentScoreLabel.text = "Score: \(currentScore)"
+    }
+    
+    @IBAction func anyTapButtonClicked(_ sender: UIButton)
+    {
+        updateScoreAndScoreLabel()
         showRandomButton()
     }
     
@@ -45,7 +50,7 @@ class ClickerViewController: UIViewController {
         {
             if let destVC = segue.destination as? ScoreScreenViewController
             {
-                destVC.finalScoreLabelText = "Your score: \(currentScore)"
+                destVC.finalScore = currentScore
             }
         }
     }
